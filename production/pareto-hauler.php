@@ -48,7 +48,7 @@
                   </div>
                   <div class="x_content">
 
-                    <div id="echart_pie" style="height:350px;"></div>
+                    <div id="echart_pie_hauler" style="height:350px;"></div>
 
                   </div>
                 </div>
@@ -82,7 +82,7 @@
                       <thead>
                         <tr>
                           <th>No</th>
-                          <th>Type</th>
+                          <th>Problem</th>
                           <th>Quantity Fuel</th>
                           <th>Prosentase</th>
                           <th>Action</th>
@@ -91,31 +91,32 @@
                       <tbody>
                         <tr>
                           <td>1</t>
-                          <td>Hauler</td>
-                          <td>4.248.989,30 </td>
-                          <td class="text-center"><span class="badge bg-red blink">42.12</span></td>
-                          <td class="text-center"><button type="button" class="btn btn-round btn-info btn-xs" onclick="window.location.href = '../production/pareto-hauler';"><b>View</b></button></td>
+                          <td>Cost Fuel Hauler Loss/Gain PTY</td>
+                          <td>3,389,578.18</td>
+                          <td class="text-center"><span class="badge bg-red blink">79.8%</span></td>
+                          <td class="text-center"><button type="button" class="btn btn-round btn-info btn-xs" onclick="window.location.href = '../production/site-detail';"><b>View</b></button></td>
                         </tr>
+                          
                         <tr>
                           <td>2</t>
-                          <td>Excavator</td>
-                          <td>3.581.168,78</td>
-                          <td class="text-center"><span class="badge bg-orange">35.50%</span></td>
-                          <td class="text-center"><button type="button" class="btn btn-round btn-info btn-xs" onclick="window.location.href = '../production/page_403';"><b>View</b></button></td>
+                          <td>Cost Fuel Hauler CT Loss/Gain PTY</td>
+                          <td>364,699.72</td>
+                          <td class="text-center"><span class="badge bg-green">8.6%</span></td>
+                          <td class="text-center"><button type="button" class="btn btn-round btn-info btn-xs" onclick="window.location.href = '../production/site-detail';"><b>View</b></button></td>
                         </tr>
                         <tr>
                           <td>3</t>
-                          <td>Support</td>
-                          <td>2.084.835,16</td>
-                          <td class="text-center"><span class="badge bg-green">20.67%</span></td>
-                          <td class="text-center"><button type="button" class="btn btn-round btn-info btn-xs" onclick="window.location.href = '../production/page_403';"><b>View</b></button></td>
+                          <td>Cost Fuel Hauler Loss/Gain HM Delay Blast Reposition</td>
+                          <td>358,090.36</td>
+                          <td class="text-center"><span class="badge bg-green">8.4%</span></td>
+                          <td class="text-center"><button type="button" class="btn btn-round btn-info btn-xs" onclick="window.location.href = '../production/site-detail';"><b>View</b></button></td>
                         </tr>
                         <tr>
                           <td>4</t>
-                          <td>Loader</td>
-                          <td>171.713,24</td>
-                          <td class="text-center"><span class="badge bg-green">1.70%</span></td>
-                          <td class="text-center"><button type="button" class="btn btn-round btn-info btn-xs" onclick="window.location.href = '../production/page_403';"><b>View</b></button></td>
+                          <td>Cost Fuel Hauler Loss/Gain HM Delay Blast Evacuation</td>
+                          <td>136,621.04</td>
+                          <td class="text-center"><span class="badge bg-green">3.2%</span></td>
+                          <td class="text-center"><button type="button" class="btn btn-round btn-info btn-xs" onclick="window.location.href = '../production/site-detail';"><b>View</b></button></td>
                         </tr>
                       </tbody>
                     </table>

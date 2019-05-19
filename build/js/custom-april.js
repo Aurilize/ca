@@ -4572,7 +4572,7 @@ if (typeof NProgress != 'undefined') {
 			  var echartPie = echarts.init(document.getElementById('echart_pie'), theme);
 
 			  echartPie.setOption({
-			  	color: ['#698CBF','#FF7400','#25A2A6', '#7EC0EE','#ea6390'],
+			  	color: ['#698CBF','#FF7400','#25A2A6','#ea6390', '#7EC0EE'],
 				tooltip: {
 				  trigger: 'item',
 				  formatter: "{a} <br/>{b} : {c} ({d}%)"
@@ -4581,7 +4581,7 @@ if (typeof NProgress != 'undefined') {
 				  orient: 'vertical',
 				  x: 'right',
 				  y: 'center',
-				  data: ['Cost Fuel (PTY Problems)', 'Cost Fuel (Over HM)', 'Cost Fuel (HM Delay)', 'Cost Loss Fuel Loader', 'Others']
+				  data: ['Hauler', 'Excavator', 'Loader', 'Support']
 				},
 				toolbox: {
 				  show: true,
@@ -4615,24 +4615,117 @@ if (typeof NProgress != 'undefined') {
 				  radius: '85%',
 				  center: ['50%', '48%'],
 				  data: [{
-					value: 400.000,
-					name: 'Cost Fuel (PTY Problems)',
+					value: 4248989.3,
+					name: 'Hauler',
 					itemStyle: {color: '#A4D05F'}
 				  }, {
-					value: 275.000,
-					name: 'Cost Fuel (Over HM)',
+					value: 3581168.78,
+					name: 'Excavator',
 					itemStyle: {color: '#A4D05F'}
 				  }, {
-					value: 120.000,
-					name: 'Cost Fuel (HM Delay)',
+					value: 2084835.16,
+					name: 'Support',
 					itemStyle: {color: '#A4D05F'}
 				  }, {
-					value: 90.000,
-					name: 'Cost Loss Fuel Loader',
+					value: 171713.24,
+					name: 'Loader',
+					itemStyle: {color: '#A4D05F'}
+				  }]
+				}]
+			  });
+
+			  var dataStyle = {
+				normal: {
+				  label: {
+					show: false
+				  },
+				  labelLine: {
+					show: false
+				  }
+				}
+			  };
+
+			  var placeHolderStyle = {
+				normal: {
+				  color: 'rgba(0,0,0,0)',
+				  label: {
+					show: false
+				  },
+				  labelLine: {
+					show: false
+				  }
+				},
+				emphasis: {
+				  color: 'rgba(0,0,0,0)'
+				}
+			  };
+
+			} 
+
+			//echart Pie
+			  
+			if ($('#echart_pie_hauler').length ){  
+			  
+			  var echartPie = echarts.init(document.getElementById('echart_pie_hauler'), theme);
+
+			  echartPie.setOption({
+			  	color: ['#698CBF','#FF7400','#25A2A6','#ea6390', '#7EC0EE'],
+				tooltip: {
+				  trigger: 'item',
+				  formatter: "{a} <br/>{b} : {c} ({d}%)"
+				},
+				legend: {
+				  orient: 'vertical',
+				  x: 'right',
+				  y: 'center',
+				  data: ['Cost Fuel Hauler Loss/Gain PTY', 'Cost Fuel Hauler CT Loss/Gain PTY', 'Cost Fuel Hauler Loss/Gain HM Delay Blast Reposition', 'Cost Fuel Hauler Loss/Gain HM Delay Blast Evacuation']
+				},
+				toolbox: {
+				  show: true,
+				  feature: {
+					magicType: {
+					  show: true,
+					  type: ['pie', 'funnel'],
+					  option: {
+						funnel: {
+						  x: '55%',
+						  width: '80%',
+						  funnelAlign: 'left',
+						  max: 1548
+						}
+					  }
+					},
+					restore: {
+					  show: true,
+					  title: "Restore"
+					},
+					saveAsImage: {
+					  show: true,
+					  title: "Save Image"
+					}
+				  }
+				},
+				calculable: true,
+				series: [{
+				  name: 'Chart',
+				  type: 'pie',
+				  radius: '80%',
+				  center: ['50%', '48%'],
+				  data: [{
+					value: 3389578.18,
+					name: 'Cost Fuel Hauler Loss/Gain PTY',
 					itemStyle: {color: '#A4D05F'}
 				  }, {
-					value: 115.000,
-					name: 'Others',
+					value: 364699.72,
+					name: 'Cost Fuel Hauler CT Loss/Gain PTY',
+					itemStyle: {color: '#A4D05F'}
+				  }, {
+					value: 358090.36,
+					name: 'Cost Fuel Hauler Loss/Gain HM Delay Blast Reposition',
+					itemStyle: {color: '#A4D05F'}
+				  }, {
+					value: 136621.04,
+					name: 'Cost Fuel Hauler Loss/Gain HM Delay Blast Evacuation',
 					itemStyle: {color: '#A4D05F'}
 				  }]
 				}]
